@@ -1,0 +1,7 @@
+body.portfolio {
+  background-color: rgb(68, 162, 234);
+/*  background-image: url(../assests/images/Lake_Tahoe_California_Nevada101.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

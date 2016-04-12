@@ -1,0 +1,63 @@
+body.about {
+  background-image: url(../assests/images/Lake_Tahoe_California_Nevada101.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.selling-points {
+    text-align: center;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: auto;
+}
+
+.point {
+    color: white;
+    height: 100%;
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 45px;
+    margin: 15px;
+    opacity: 0;
+    -webkit-transform: translate(-200px, -200px);
+    -moz-transform: translate(-200px, -200px);
+    transform: translate(-200px, -200px);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.point.engineer:hover {
+    opacity: 0.25;
+    background-image: url(../assests/images/open-source-software.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.point.photographer:hover {
+    opacity: 0.25;
+    background-image: url(../assests/images/photography-wallpaper-desktop-picture-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+.point .point-title {
+    font-size: 1.5rem;
+}
+
+.ion-ios-gear-outline,
+.ion-ios-camera,
+.ion-iphone {
+    color: white;
+    font-size: 5rem;
+}
+

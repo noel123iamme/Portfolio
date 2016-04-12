@@ -1,0 +1,30 @@
+body.landing {
+    background-color: rgb(50, 10, 100);
+    background-image: url(../assests/images/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+
+.hero-content .hero-title {
+    font-size: .85rem;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    text-shadow: 1px 1px 10px rgb(58,23,63);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-content .hero-title:hover {
+    letter-spacing: 0.5rem;
+}
+
