@@ -9,30 +9,17 @@ var navTemplate =
     +  '</div>';
     
 var onHover = function(event) {
-    $('.JND').text("Joseph Noel Deguzman");
-    $('.JND').css({
-        'font-size': '.75rem',
-        'color': 'rgb(50, 10, 100)',
-        'letter-spacing': '.15rem',
-        'text-transform': 'uppercase',
-        '-webkit-transform': 'rotate(360deg)',
-        'transform': 'rotate(360deg)'
-    });
+    $('.JND').text("J. Noel Deguzman");
 };
 
 var offHover = function(event) {
     $('.JND').text('JND');
-    $('.JND').css({
-        'font-size': '1rem',
-        'color': 'white',
-        'letter-spacing': '0rem',
-        'text-transform': 'uppercase',
-        '-webkit-transform': 'rotate(-360deg)',
-        'transform': 'rotate(-360deg)'
-    });
 };
+
+//add favicon
+// add/remove class with single mouseon/off function to repeat need to duplicate css and have x2 function
 
 $(window).load(function() {
   $('.navbar').append(navTemplate);
-  $('.logo').hover(onHover, offHover);
+  $('.JND').hover(onHover, offHover);
 });

@@ -9,22 +9,55 @@ a {
   text-decoration: none;
 }
 
+.left-side-bar {
+  float: left;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+}
+
+img {
+}
+
+.profile-picture {
+  width: 90%;
+  max-width: 100%;
+  margin: 15px 15px 0px 15px;
+  background-repeat: no-repeat;  
+  background-size: contain;
+  z-index: 1;
+}
+
+.quote {
+  opacity: .5;
+  width: 90%;
+  max-width: 100%;
+  margin: 0px 0px 0px 15px;
+  background-repeat: no-repeat;  
+  z-index: 1;
+}
+
 .selling-points {
+    float: left;
+    right: 0;
     text-align: center;
-    height: 40%;
-    width: 100%;
+    height: 100%;
+    width: 30%;
     position: absolute;
     top: auto;
+    margin-right: 5px;
+  padding: 15px;
 }
 
 .point {
-    color: white;
-    height: 100%;
+    color: black;
+    height: auto;
     position: relative;
-    padding: 1.5rem;
+    padding: .5rem;
     text-align: center;
-    border-radius: 45px;
-    margin: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     opacity: 0;
     -webkit-transform: translate(-200px, -200px);
     -moz-transform: translate(-200px, -200px);
@@ -34,8 +67,15 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
+.point:hover {
+    -webkit-transform: translateZ(100px);
+    -moz-transform: translateZ(100px);
+    transform: translateZ(100px);  
+}
+
 .point.engineer:hover {
     opacity: 0.25;
+    color: white;
     background-image: url(../assests/images/open-source-software.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -44,20 +84,26 @@ a {
 
 .point.photographer:hover {
     opacity: 0.25;
-    background-image: url(../assests/images/photography-wallpaper-desktop-picture-1.jpg);
+    color: white;
+    background-image: url(../assests/images/photography.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;    
 }
 
 .point .point-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .ion-ios-gear-outline,
 .ion-ios-camera,
 .ion-iphone {
-    color: white;
-    font-size: 5rem;
+    color: black;
+    font-size: 3rem;
 }
 
+.ion-ios-gear-outline,
+.ion-ios-camera,
+.ion-iphone:hover {
+    color: white;
+}
