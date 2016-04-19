@@ -16,10 +16,8 @@ var offHover = function(event) {
     $('.JND').text('JND');
 };
 
-//add favicon
-// add/remove class with single mouseon/off function to repeat need to duplicate css and have x2 function
-
-$(window).load(function() {
+var doMain = function() {
   $('.navbar').append(navTemplate);
   $('.JND').hover(onHover, offHover);
-});
+};
+

@@ -1,10 +1,3 @@
-body.about {
-  background-image: url(../assests/images/Lake_Tahoe_California_Nevada101.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 a {
   text-decoration: none;
 }
@@ -18,6 +11,17 @@ a {
 }
 
 img {
+  border-radius: 25% 0 25% 0;
+  opacity: 0;
+  -webkit-transform: translateX(-400px);
+  -moz-transform: translateX(-400px);
+  transform: translateX(-400px);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  transition-delay: 1s;
 }
 
 .profile-picture {
@@ -30,7 +34,7 @@ img {
 }
 
 .quote {
-  opacity: .5;
+  opacity: 1;
   width: 90%;
   max-width: 100%;
   margin: 0px 0px 0px 15px;
@@ -39,71 +43,67 @@ img {
 }
 
 .selling-points {
-    float: left;
-    right: 0;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-    position: absolute;
-    top: auto;
-    margin-right: 5px;
+/*  float: left;*/
+  right: 0;
+  text-align: center;
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  top: auto;
+  margin-right: 5px;
   padding: 15px;
 }
 
 .point {
-    color: black;
-    height: auto;
-    position: relative;
-    padding: .5rem;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    opacity: 0;
-    -webkit-transform: translate(-200px, -200px);
-    -moz-transform: translate(-200px, -200px);
-    transform: translate(-200px, -200px);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  margin-top: 10px;
+  color: black;
+  height: auto;
+  position: relative;
+  padding: .5rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  -webkit-transform: translate(200px, 200px);
+  -moz-transform: translate(200px, 200px);
+  transform: translate(200px, 200px);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.point:hover > span {
+  color: white;
 }
 
 .point:hover {
-    -webkit-transform: translateZ(100px);
-    -moz-transform: translateZ(100px);
-    transform: translateZ(100px);  
-}
-
-.point.engineer:hover {
-    opacity: 0.25;
-    color: white;
-    background-image: url(../assests/images/open-source-software.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.point.photographer:hover {
-    opacity: 0.25;
-    color: white;
-    background-image: url(../assests/images/photography.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;    
+  opacity: 0.5;
+  color: white;
+  border-radius: 25% 0 25% 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
+  transform: translateZ(100px);  
 }
 
 .point .point-title {
-    font-size: 1.25rem;
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 .ion-ios-gear-outline,
 .ion-ios-camera,
 .ion-iphone {
-    color: black;
-    font-size: 3rem;
+  color: black;
+  font-size: 3rem;
 }
 
-.ion-ios-gear-outline,
-.ion-ios-camera,
-.ion-iphone:hover {
-    color: white;
+.point.engineer:hover {
+  background-image: url(../assests/images/open-source-software.jpg);
+}
+
+.point.photographer:hover {
+  background-image: url(../assests/images/photography.jpg);
 }

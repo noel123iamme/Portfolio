@@ -1,32 +1,15 @@
-body.portfolio {
-  background-color: rgb(68, 162, 234);
-/*  background-image: url(../assests/images/Lake_Tahoe_California_Nevada101.jpg);*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hero-content {
-    position: absolute;
-    top: -5%;
-    left: 25%;
-    width: 50%;
-    align-content: center;
-  border-bottom: thick solid rgb(50,10,100);
+  position: relative;
+  top: 5%;
+  width: 100%;
+  align-content: center;
 }
 
 .hero-content .hero-title {
-    font-family: 'Six Caps', sans-serif;
-    font-size: 6.25rem;
+    margin: 15px;
+    font-size: 4.25rem;
+    text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
     text-shadow: 1px 1px 2px rgb(58,23,63);
-    opacity: 0;
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-}
-
-.hero-content .hero-title:hover {
-    letter-spacing: 0rem;
 }
