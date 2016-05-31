@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).load(function () {
   doMain();
   
   $('.hero-title').css({

@@ -1,27 +1,12 @@
-a {
-  text-decoration: none;
-}
-
-.left-side-bar {
-  float: left;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  position: absolute;
-}
-
 img {
   border-radius: 25% 0 25% 0;
   opacity: 0;
   -webkit-transform: translateX(-400px);
   -moz-transform: translateX(-400px);
   transform: translateX(-400px);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  transition-delay: 1s;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .profile-picture {
@@ -42,22 +27,22 @@ img {
   z-index: 1;
 }
 
-.selling-points {
-/*  float: left;*/
-  right: 0;
-  text-align: center;
-  height: 100%;
-  width: 25%;
-  position: absolute;
-  top: auto;
-  margin-right: 5px;
-  padding: 15px;
+.attributes {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 1.25;
+  overflow: hidden;
+}
+
+.about-me {
+  margin-top: 15px;
 }
 
 .point {
   margin-top: 10px;
   color: black;
   height: auto;
+  min-height: 250px;
   position: relative;
   padding: .5rem;
   text-align: center;
@@ -67,13 +52,14 @@ img {
   -webkit-transform: translate(200px, 200px);
   -moz-transform: translate(200px, 200px);
   transform: translate(200px, 200px);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .point:hover > span {
   color: white;
+  border-bottom: thin solid white;
 }
 
 .point:hover {
@@ -98,6 +84,7 @@ img {
 .ion-iphone {
   color: black;
   font-size: 3rem;
+  border-bottom: thin solid black;
 }
 
 .point.engineer:hover {
@@ -107,3 +94,5 @@ img {
 .point.photographer:hover {
   background-image: url(../assests/images/photography.jpg);
 }
+
+
