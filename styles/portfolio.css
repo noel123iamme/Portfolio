@@ -1,3 +1,7 @@
+body.portfolio {
+  background-image: url(../assests/images/comic-sunburst-background-o.jpg);
+}
+
 .hero-content {
   position: relative;
   top: 5%;
@@ -7,8 +11,8 @@
 
 .hero-title {
     width: 40%;
-    margin: 15px;
-    font-size: 4.25rem;
+    margin-left: 5%;
+    font-size: 3.25rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .5rem;
@@ -21,11 +25,13 @@
 
 .project-item {
   align-content: center;
-  max-width: 265px
+  max-width: 265px;
 }
 
 .project-img {
   align-content: center;
+  height: 225px;
+  width: 100%;
 }
 
 .project-title {

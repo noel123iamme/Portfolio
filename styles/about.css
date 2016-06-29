@@ -1,3 +1,8 @@
+body.about {
+  background-image: url(../assests/images/Lake_Tahoe_California_Nevada101.jpg);
+  background-size: cover;
+}
+
 img {
   border-radius: 25% 0 25% 0;
   opacity: 0;
@@ -9,10 +14,14 @@ img {
   transition: all 0.75s ease-in-out;
 }
 
+.left-side-bar, .selling-points, .middle-bar{
+  padding: 0;
+}
+
 .profile-picture {
   width: 90%;
   max-width: 100%;
-  margin: 15px 15px 0px 15px;
+  /*margin: 15px 15px 0px 15px;*/
   background-repeat: no-repeat;  
   background-size: contain;
   z-index: 1;
@@ -22,13 +31,13 @@ img {
   opacity: 1;
   width: 90%;
   max-width: 100%;
-  margin: 0px 0px 0px 15px;
+  /*margin: 0px 0px 0px 15px;*/
   background-repeat: no-repeat;  
   z-index: 1;
 }
 
 .attributes {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   text-align: right;
   font-size: 1.25;
   overflow: hidden;
@@ -39,12 +48,12 @@ img {
 }
 
 .point {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   color: black;
   height: auto;
   min-height: 250px;
   position: relative;
-  padding: .5rem;
+  /*padding: .5rem;*/
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;

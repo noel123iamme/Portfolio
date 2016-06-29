@@ -16,82 +16,24 @@ body {
 }
 
 a {
-  text-decoration: none;
-}
-
-.container {
-    margin: 0 auto;
-    width: 100%;
-}
-
-.container.narrow {
-    max-width: 56rem;
+    text-decoration: none;
 }
 
 .navbar {
-    position: relative;
-    padding: 0.5rem;
-    background-color: rgba(50,10,100,0.3);
-    height: 2.25rem;
+    background-color: rgba(50,10,100,0.15);
+    border-style: none;
     z-index: 1;
 }
 
-.navbar .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    vertical-align: middle;
-    font-weight: 900;
-    cursor: pointer;
-}
-
-.navbar .logo:hover {
-    border-bottom: thick solid rgb(50,10,100);
-}
-
-.JND {
-    font-size: 1rem;
-    height: 100%;
-    color: white;
-    letter-spacing: 0rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    transform-origin: center;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-.logo:hover > .JND {
-    color: rgb(50, 10, 100);
-    font-size: .75rem;
-    letter-spacing: .15rem;
-}
-
-.navbar .links-container {
-    display: table;
-    position: absolute;
-    top: 0.15rem;
-    right: 0;
-    height: 2rem;
-    color: white;
-    text-decoration: none;
-}
-
-.links-container .navbar-link {
+.navbar-link {
     display: table-cell;
     position: relative;
     height: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: .25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     vertical-align: middle;
     color: white;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     letter-spacing: 0.07rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -102,22 +44,45 @@ a {
     transition: all 0.25s ease-in-out;
 }
 
-.ion-social-facebook,
-.ion-social-linkedin,
-.ion-social-github,
-.ion-email
-{
-    font-size: 1rem;
-}
-
-.links-container .navbar-link:hover {
+.navbar-link:hover {
     color: rgb(50,10,100);
     letter-spacing: 0.15rem;
     border-bottom: thin solid rgb(50,10,100);
 }
 
-.links-container .navbar-link:active {
+.navbar-link:active {
     background-color: white;
+}
+
+.JND {
+    font-size: 1rem;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*transform-origin: center;*/
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.JND:hover {
+    color: rgb(50, 10, 100);
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    border-bottom: thin solid rgb(50,10,100);
+}
+
+.ion-social-facebook,
+.ion-social-linkedin,
+.ion-social-github,
+.ion-email
+{
+    font-size: 1.25rem;
 }
 
 .clearfix::before,
@@ -148,5 +113,5 @@ a {
 }
 
 @media (min-width: 1024px) {
-    html { font-size: 120%; }
+    html { font-size: 1.2rem; }
 }
